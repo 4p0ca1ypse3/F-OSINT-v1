@@ -1,0 +1,12 @@
+PyQt5==5.15.9
+requests==2.31.0
+PySocks==1.7.1
+cryptography==41.0.7
+reportlab==4.0.7
+beautifulsoup4==4.12.2
+stem==1.8.2
+bcrypt==4.1.2
+Pillow==10.1.0
+python-dateutil==2.8.2
+lxml==4.9.3
+markdown==3.5.1

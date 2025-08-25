@@ -1,0 +1,44 @@
+{
+    "app_name": "F-OSINT DWv1",
+    "version": "1.0.0",
+    "author": "4p0ca1ypse",
+    "tor": {
+        "socks_port": 9050,
+        "control_port": 9051,
+        "timeout": 30
+    },
+    "gui": {
+        "theme": "dark",
+        "window_size": [1200, 800],
+        "auto_save_interval": 300
+    },
+    "reports": {
+        "output_dir": "reports",
+        "formats": ["pdf", "markdown"],
+        "include_timestamps": true
+    },
+    "modules": {
+        "google_dorking": {
+            "max_results": 100,
+            "delay_between_requests": 2
+        },
+        "darkweb_scanner": {
+            "max_depth": 3,
+            "timeout": 60,
+            "user_agent": "Mozilla/5.0 (Windows NT 10.0; rv:109.0) Gecko/20100101 Firefox/115.0"
+        },
+        "leak_checker": {
+            "apis": {
+                "haveibeenpwned": {
+                    "enabled": true,
+                    "api_key": ""
+                }
+            }
+        }
+    },
+    "security": {
+        "password_min_length": 8,
+        "session_timeout": 3600,
+        "encryption_key_length": 32
+    }
+}
