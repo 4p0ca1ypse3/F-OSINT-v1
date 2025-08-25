@@ -1,0 +1,7 @@
+# Tor configuration for F-OSINT DWv1
+# This file contains the Tor configuration settings
+
+SOCKSPort 9050
+ControlPort 9051
+CookieAuthentication 1
+ExitPolicy reject *:*
